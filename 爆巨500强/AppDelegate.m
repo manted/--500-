@@ -8,14 +8,50 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate ()
+
+//@property (nonatomic, strong) UIView *view;
+
+@end
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //向微信注册
+    [WXApi registerApp:@"wxb40fb413716e7134" withDescription:@"爆巨500强 1.0"];
+    
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    NSLog(@"appdelegate handleopenurl");
+
+    return  [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"appdelegate openurl");
+
+    BOOL isSuc = [WXApi handleOpenURL:url delegate:self];
+    NSLog(@"url %@ isSuc %d",url,isSuc == YES ? 1 : 0);
+    return  isSuc;
+}
+
+-(void) onResp:(BaseResp*)resp
+{
+    NSLog(@"appdelegate onResp");
+    if([resp isKindOfClass:[SendMessageToWXResp class]])
+    {
+        if (resp.errCode == WXSuccess) {
+            
+        }
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

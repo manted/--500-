@@ -10,4 +10,7 @@
 
 @interface MonthTVC : UITableViewController
 
+@property (nonatomic, strong) NSArray *monthArray;
+@property (nonatomic, strong) NSString *year;
+
 @end

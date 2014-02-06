@@ -7,10 +7,12 @@
 //
 
 #import "FirstTVC.h"
+#import "ContentTVC.h"
 
 @interface FirstTVC ()
 
 @property (nonatomic, strong) NSDictionary *allData;
+
 
 @end
 
@@ -23,27 +25,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSArray *cells = [self.tableView visibleCells];
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    NSLog(@"tag = %d",cell.tag);
-    NSLog(@"count = %i",[cells count]);
-    for (UITableViewCell *aCell in cells) {
-        NSArray *monthData = [self getDataOfMonth:[aCell tag]];
-        int numberOfMessages = [self countMessagesOfMonthArray:monthData];
-//        aCell.text = [NSString stringWithFormat:@"%d个段子",numberOfMessages];
-        NSLog(@"111");
-    }
 }
 
 - (int)countMessagesOfMonthArray:(NSArray*)monthArray
@@ -62,9 +43,9 @@
 {
     if (!_allData) {
         NSString *path = [[NSBundle mainBundle]  pathForResource:@"500" ofType:@"json"];
-        NSLog(@"path:%@",path);
+//        NSLog(@"path:%@",path);
         NSData *jdata = [[NSData alloc] initWithContentsOfFile:path ];
-        NSLog(@"length:%d",[jdata length]);
+//        NSLog(@"length:%d",[jdata length]);
         NSError *error = nil;
         //    NSData * Adata = [NSJSONSerialization JSONObjectWithData:jdata options:kNilOptions error:&error];
         
@@ -122,8 +103,8 @@
     NSString *monthString = [NSString stringWithFormat:@"%d",monthKey];
     NSArray *monthArray = [self.allData objectForKey:monthString];
     cell.textLabel.text = [NSString stringWithFormat:@"%@月",monthString];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d个段子",[self countMessagesOfMonthArray:monthArray]];
-    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d条语录",[self countMessagesOfMonthArray:monthArray]];
+    cell.tag = monthKey;
     
     return cell;
 }
@@ -134,6 +115,23 @@
         return @"2007年";
     } else {
         return @"2008年";
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"content"]) {
+        if ([sender isKindOfClass:[UITableViewCell class]]) {
+            UITableViewCell *cell = (UITableViewCell*)sender;
+            ContentTVC *contentTVC = (ContentTVC*)segue.destinationViewController;
+            contentTVC.contentArray = [self getDataOfMonth:cell.tag];
+            contentTVC.navigationItem.title = [NSString stringWithFormat:@"%d月",cell.tag];
+            if (cell.tag >=8 && cell.tag <= 12) {
+                contentTVC.year = @"2007";
+            }else{
+                contentTVC.year = @"2008";
+            }
+        }
     }
 }
 

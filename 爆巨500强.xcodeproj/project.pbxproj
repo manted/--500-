@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71A042F189F3D3500EAB00D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F71A042B189F3D3500EAB00D /* InfoPlist.strings */; };
+		F71A0430189F3D3500EAB00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71A042D189F3D3500EAB00D /* Main.storyboard */; };
+		F71A0433189F452200EAB00D /* ContentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A0432189F452200EAB00D /* ContentTVC.m */; };
 		F72D4686189E741F0033DA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D4685189E741F0033DA87 /* Foundation.framework */; };
 		F72D4688189E741F0033DA87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D4687189E741F0033DA87 /* CoreGraphics.framework */; };
 		F72D468A189E741F0033DA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D4689189E741F0033DA87 /* UIKit.framework */; };
-		F72D4690189E741F0033DA87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F72D468E189E741F0033DA87 /* InfoPlist.strings */; };
 		F72D4692189E741F0033DA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D4691189E741F0033DA87 /* main.m */; };
 		F72D4696189E741F0033DA87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D4695189E741F0033DA87 /* AppDelegate.m */; };
-		F72D4699189E741F0033DA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72D4697189E741F0033DA87 /* Main.storyboard */; };
-		F72D469C189E741F0033DA87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D469B189E741F0033DA87 /* ViewController.m */; };
 		F72D469E189E741F0033DA87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72D469D189E741F0033DA87 /* Images.xcassets */; };
 		F72D46A5189E741F0033DA87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D46A4189E741F0033DA87 /* XCTest.framework */; };
 		F72D46A6189E741F0033DA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D4685189E741F0033DA87 /* Foundation.framework */; };
 		F72D46A7189E741F0033DA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D4689189E741F0033DA87 /* UIKit.framework */; };
-		F72D46AF189E741F0033DA87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F72D46AD189E741F0033DA87 /* InfoPlist.strings */; };
 		F72D46B1189E741F0033DA87 /* __500_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D46B0189E741F0033DA87 /* __500_Tests.m */; };
 		F72D46BD189E75950033DA87 /* 500.json in Resources */ = {isa = PBXBuildFile; fileRef = F72D46BC189E75940033DA87 /* 500.json */; };
-		F7CE9354189E7F1900E29DF9 /* MonthTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CE9353189E7F1900E29DF9 /* MonthTVC.m */; };
-		F7CE9357189E7F2800E29DF9 /* DayTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CE9356189E7F2800E29DF9 /* DayTVC.m */; };
-		F7CE935A189E7F3A00E29DF9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CE9359189E7F3A00E29DF9 /* DetailViewController.m */; };
 		F7CE935D189E81B200E29DF9 /* FirstTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CE935C189E81B200E29DF9 /* FirstTVC.m */; };
+		F7CE9360189EA1C500E29DF9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CE935F189EA1C500E29DF9 /* DetailViewController.m */; };
+		F7D7A3BB189FC0D20024B774 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D7A3B8189FC0D20024B774 /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,34 +37,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F71A042C189F3D3500EAB00D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F71A042E189F3D3500EAB00D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Main.storyboard; sourceTree = "<group>"; };
+		F71A0431189F452200EAB00D /* ContentTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTVC.h; sourceTree = "<group>"; };
+		F71A0432189F452200EAB00D /* ContentTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTVC.m; sourceTree = "<group>"; };
 		F72D4682189E741F0033DA87 /* 爆巨500强.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "爆巨500强.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72D4685189E741F0033DA87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F72D4687189E741F0033DA87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F72D4689189E741F0033DA87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F72D468D189E741F0033DA87 /* 爆巨500强-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "爆巨500强-Info.plist"; sourceTree = "<group>"; };
-		F72D468F189E741F0033DA87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F72D4691189E741F0033DA87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F72D4693189E741F0033DA87 /* 爆巨500强-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "爆巨500强-Prefix.pch"; sourceTree = "<group>"; };
 		F72D4694189E741F0033DA87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F72D4695189E741F0033DA87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F72D469A189E741F0033DA87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F72D469B189E741F0033DA87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F72D469D189E741F0033DA87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F72D46A3189E741F0033DA87 /* 爆巨500强Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "爆巨500强Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72D46A4189E741F0033DA87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F72D46AC189E741F0033DA87 /* 爆巨500强Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "爆巨500强Tests-Info.plist"; sourceTree = "<group>"; };
-		F72D46AE189E741F0033DA87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F72D46B0189E741F0033DA87 /* __500_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __500_Tests.m; sourceTree = "<group>"; };
 		F72D46BC189E75940033DA87 /* 500.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 500.json; sourceTree = "<group>"; };
-		F7CE934D189E773A00E29DF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F7CE9352189E7F1900E29DF9 /* MonthTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthTVC.h; sourceTree = "<group>"; };
-		F7CE9353189E7F1900E29DF9 /* MonthTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthTVC.m; sourceTree = "<group>"; };
-		F7CE9355189E7F2800E29DF9 /* DayTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTVC.h; sourceTree = "<group>"; };
-		F7CE9356189E7F2800E29DF9 /* DayTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTVC.m; sourceTree = "<group>"; };
-		F7CE9358189E7F3A00E29DF9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		F7CE9359189E7F3A00E29DF9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F7CE935B189E81B200E29DF9 /* FirstTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTVC.h; sourceTree = "<group>"; };
 		F7CE935C189E81B200E29DF9 /* FirstTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTVC.m; sourceTree = "<group>"; };
+		F7CE935E189EA1C500E29DF9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F7CE935F189EA1C500E29DF9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F7D7A3B8189FC0D20024B774 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		F7D7A3B9189FC0D20024B774 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		F7D7A3BA189FC0D20024B774 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +72,7 @@
 			files = (
 				F72D4688189E741F0033DA87 /* CoreGraphics.framework in Frameworks */,
 				F72D468A189E741F0033DA87 /* UIKit.framework in Frameworks */,
+				F7D7A3BB189FC0D20024B774 /* libWeChatSDK.a in Frameworks */,
 				F72D4686189E741F0033DA87 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71A042A189F3D3500EAB00D /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F71A042B189F3D3500EAB00D /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
 		F72D4679189E741F0033DA87 = {
 			isa = PBXGroup;
 			children = (
@@ -126,22 +131,20 @@
 		F72D468B189E741F0033DA87 /* 爆巨500强 */ = {
 			isa = PBXGroup;
 			children = (
+				F7D7A3B7189FC0D20024B774 /* WeChatSDK_1.4.2.1 */,
+				F71A042A189F3D3500EAB00D /* en.lproj */,
 				F72D46BC189E75940033DA87 /* 500.json */,
+				F71A042D189F3D3500EAB00D /* Main.storyboard */,
 				F72D4694189E741F0033DA87 /* AppDelegate.h */,
 				F72D4695189E741F0033DA87 /* AppDelegate.m */,
-				F72D4697189E741F0033DA87 /* Main.storyboard */,
-				F72D469A189E741F0033DA87 /* ViewController.h */,
-				F72D469B189E741F0033DA87 /* ViewController.m */,
 				F72D469D189E741F0033DA87 /* Images.xcassets */,
-				F72D468C189E741F0033DA87 /* Supporting Files */,
-				F7CE9352189E7F1900E29DF9 /* MonthTVC.h */,
-				F7CE9353189E7F1900E29DF9 /* MonthTVC.m */,
-				F7CE9355189E7F2800E29DF9 /* DayTVC.h */,
-				F7CE9356189E7F2800E29DF9 /* DayTVC.m */,
-				F7CE9358189E7F3A00E29DF9 /* DetailViewController.h */,
-				F7CE9359189E7F3A00E29DF9 /* DetailViewController.m */,
 				F7CE935B189E81B200E29DF9 /* FirstTVC.h */,
 				F7CE935C189E81B200E29DF9 /* FirstTVC.m */,
+				F7CE935E189EA1C500E29DF9 /* DetailViewController.h */,
+				F7CE935F189EA1C500E29DF9 /* DetailViewController.m */,
+				F71A0431189F452200EAB00D /* ContentTVC.h */,
+				F71A0432189F452200EAB00D /* ContentTVC.m */,
+				F72D468C189E741F0033DA87 /* Supporting Files */,
 			);
 			path = "爆巨500强";
 			sourceTree = "<group>";
@@ -150,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				F72D468D189E741F0033DA87 /* 爆巨500强-Info.plist */,
-				F72D468E189E741F0033DA87 /* InfoPlist.strings */,
 				F72D4691189E741F0033DA87 /* main.m */,
 				F72D4693189E741F0033DA87 /* 爆巨500强-Prefix.pch */,
 			);
@@ -170,9 +172,18 @@
 			isa = PBXGroup;
 			children = (
 				F72D46AC189E741F0033DA87 /* 爆巨500强Tests-Info.plist */,
-				F72D46AD189E741F0033DA87 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7D7A3B7189FC0D20024B774 /* WeChatSDK_1.4.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				F7D7A3B8189FC0D20024B774 /* libWeChatSDK.a */,
+				F7D7A3B9189FC0D20024B774 /* WXApi.h */,
+				F7D7A3BA189FC0D20024B774 /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.4.2.1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ye Hua";
 				TargetAttributes = {
+					F72D4681189E741F0033DA87 = {
+						DevelopmentTeam = R6A4T276PC;
+					};
 					F72D46A2189E741F0033DA87 = {
 						TestTargetID = F72D4681189E741F0033DA87;
 					};
@@ -234,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F72D4679189E741F0033DA87;
 			productRefGroup = F72D4683189E741F0033DA87 /* Products */;
@@ -252,9 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72D469E189E741F0033DA87 /* Images.xcassets in Resources */,
+				F71A042F189F3D3500EAB00D /* InfoPlist.strings in Resources */,
 				F72D46BD189E75950033DA87 /* 500.json in Resources */,
-				F72D4690189E741F0033DA87 /* InfoPlist.strings in Resources */,
-				F72D4699189E741F0033DA87 /* Main.storyboard in Resources */,
+				F71A0430189F3D3500EAB00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72D46AF189E741F0033DA87 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,13 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7CE9354189E7F1900E29DF9 /* MonthTVC.m in Sources */,
-				F72D469C189E741F0033DA87 /* ViewController.m in Sources */,
+				F71A0433189F452200EAB00D /* ContentTVC.m in Sources */,
 				F72D4696189E741F0033DA87 /* AppDelegate.m in Sources */,
-				F7CE9357189E7F2800E29DF9 /* DayTVC.m in Sources */,
 				F72D4692189E741F0033DA87 /* main.m in Sources */,
-				F7CE935A189E7F3A00E29DF9 /* DetailViewController.m in Sources */,
 				F7CE935D189E81B200E29DF9 /* FirstTVC.m in Sources */,
+				F7CE9360189EA1C500E29DF9 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,28 +314,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F72D468E189E741F0033DA87 /* InfoPlist.strings */ = {
+		F71A042B189F3D3500EAB00D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F72D468F189E741F0033DA87 /* en */,
+				F71A042C189F3D3500EAB00D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F72D4697189E741F0033DA87 /* Main.storyboard */ = {
+		F71A042D189F3D3500EAB00D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F7CE934D189E773A00E29DF9 /* en */,
+				F71A042E189F3D3500EAB00D /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F72D46AD189E741F0033DA87 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F72D46AE189E741F0033DA87 /* en */,
-			);
-			name = InfoPlist.strings;
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -395,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,12 +412,18 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ye Hua (H87TYET4CR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "爆巨500强/爆巨500强-Prefix.pch";
 				INFOPLIST_FILE = "爆巨500强/爆巨500强-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/manted/Documents/ios/爆巨500强/爆巨500强/WeChatSDK_1.4.2.1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,12 +434,18 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ye Hua (H87TYET4CR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "爆巨500强/爆巨500强-Prefix.pch";
 				INFOPLIST_FILE = "爆巨500强/爆巨500强-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/manted/Documents/ios/爆巨500强/爆巨500强/WeChatSDK_1.4.2.1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
