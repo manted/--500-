@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="k9H-up-ptZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="k9H-up-ptZ">
     <dependencies>
-        <deployment defaultVersion="1280" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
@@ -106,27 +106,27 @@
         <scene sceneID="rd6-vO-DfI">
             <objects>
                 <viewController id="8F8-cJ-1UD" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wnU-N6-mnK"/>
+                        <viewControllerLayoutGuide type="bottom" id="9bh-Nm-9NX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pXs-zE-b1x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9DP-Qf-QNh">
-                                <rect key="frame" x="20" y="86" width="280" height="350"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="9DP-Qf-QNh">
+                                <rect key="frame" x="20" y="102" width="280" height="334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALw-yy-mTZ">
-                                <rect key="frame" x="20" y="72" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ixg-zu-rGH">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixg-zu-rGH">
                                 <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Re3-q3-6Rp"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fxe-ix-zmH"/>
                                     <barButtonItem title="上一条" id="zZe-64-pLQ">
@@ -143,8 +143,30 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Kw9-pF-nKc"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALw-yy-mTZ">
+                                <rect key="frame" x="20" y="73" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="v06-eM-0xr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ALw-yy-mTZ" firstAttribute="trailing" secondItem="9DP-Qf-QNh" secondAttribute="trailing" id="66C-KT-nAG"/>
+                            <constraint firstItem="ixg-zu-rGH" firstAttribute="leading" secondItem="pXs-zE-b1x" secondAttribute="leading" id="EhF-yw-C30"/>
+                            <constraint firstItem="ixg-zu-rGH" firstAttribute="centerX" secondItem="9DP-Qf-QNh" secondAttribute="centerX" id="EoH-gk-jiD"/>
+                            <constraint firstAttribute="bottom" secondItem="ixg-zu-rGH" secondAttribute="bottom" id="KN7-za-ob3"/>
+                            <constraint firstAttribute="trailing" secondItem="ALw-yy-mTZ" secondAttribute="trailing" constant="20" symbolic="YES" id="L3f-q4-aM8"/>
+                            <constraint firstItem="9DP-Qf-QNh" firstAttribute="top" secondItem="ALw-yy-mTZ" secondAttribute="bottom" constant="8" symbolic="YES" id="LVX-2a-Iw2"/>
+                            <constraint firstItem="ALw-yy-mTZ" firstAttribute="leading" secondItem="pXs-zE-b1x" secondAttribute="leading" constant="20" symbolic="YES" id="RyJ-ar-iWS"/>
+                            <constraint firstItem="ALw-yy-mTZ" firstAttribute="top" secondItem="wnU-N6-mnK" secondAttribute="bottom" constant="9" id="WdF-MQ-RBh"/>
+                            <constraint firstItem="9DP-Qf-QNh" firstAttribute="leading" secondItem="ALw-yy-mTZ" secondAttribute="leading" id="bNJ-MA-hT0"/>
+                            <constraint firstItem="ixg-zu-rGH" firstAttribute="top" secondItem="9DP-Qf-QNh" secondAttribute="bottom" id="dJX-HD-4ad"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="语录" id="5cR-ZB-GcJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="reply" id="WeK-GU-bIx">
